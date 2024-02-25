@@ -1,0 +1,56 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 10px); /* Adjust width and margin as needed */
+    vertical-align: top;
+  }
+  .image-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  .image-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease-in-out;
+  }
+  .image-container:hover .image-wrapper img {
+    filter: grayscale(100%);
+  }
+  .hover-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+  }
+  .image-container:hover .hover-content {
+    opacity: 1;
+  }
+  .hover-content h2,
+  .hover-content p,
+  .hover-content button {
+    margin: 5px 0;
+  }
+  .hover-content button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #145eee;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .hover-content button:hover {
+    background-color: #0e3ca6;
+  }
